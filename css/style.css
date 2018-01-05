@@ -26,19 +26,19 @@ text-decoration: none;
 
 
 .page-header {
+display: flex;
 background-image: url("../img/index-bg.jpg");
-position: relative;
 background-position: center;
 background-repeat: no-repeat;
 background-color: #eef0f6;
 height: 800px;
-width: 100%;
-margin: 0 auto;
+justify-content: center;
 }
 
 .main-nav {
-  width: 700px;
-  margin: 0 auto;
+width: 625px;
+display: flex;
+justify-content: center;
 }
 
 .main-nav-list {
@@ -47,8 +47,9 @@ line-height: 26px;
 list-style: none;
 font-weight: bold;
 display: flex;
-margin: 0 auto;
+margin: 0;
 padding: 0;
+justify-content: center;
 }
 
 .logo {
@@ -60,18 +61,12 @@ margin-right: 64px;
 
 .nav {
 margin-top: 66px;
+position: relative;
 }
 
-.nav-one::after {
+.nav:nth-of-type(2n+1):after {
 content: ".";
-margin-right: 35px;
-margin-left: 40px;
-}
-
-.nav-two::after {
-content: ".";
-margin-right: 34px;
-margin-left: 34px;
+position: absolute;
 }
 
 .main-nav-list a {
@@ -97,6 +92,52 @@ color: #9b9d9f;
 
 .features h3 {
 letter-spacing: 2px;
+}
+
+.feaut-line {
+  position: relative;
+}
+
+.feaut-line-vin {
+  height: 201px;
+}
+
+.feaut-line-la-bor {
+  height: 199.5px;
+}
+
+.feaut-line-retro {
+  height: 199.5px;
+}
+
+.feaut-line img {
+  height: 100%;
+  width: auto;
+  padding-top: 70px;
+}
+
+.retro h3 {
+margin-top: 0;
+margin-bottom: 13px;
+}
+
+.feaut-line::before {
+width: 50px;
+content: '';
+position: absolute;
+border-bottom: 2px solid #d7d7d7;
+right: 240px;
+top: 20px;
+}
+
+.new-generation p {
+padding-left: 275px;
+padding-right: 240px;
+}
+
+.new-generation h3 {
+padding-left: 275px;
+padding-right: 240px;
 }
 
 main {
@@ -178,6 +219,7 @@ width: 100%;
 display: flex;
 flex-wrap: wrap;
 width: 33.3334%;
+height: 534px;
 }
 
 .gal-left-top {
@@ -185,13 +227,35 @@ display: flex;
 height: auto;
 }
 
+.gal-left-top img,
+.gal-left-batton img,
+.gal-right-top img,
+.gal-right-button img {
+height: 100%;
+width: auto;
+}
+
+.gal-left-top,
+.gal-left-batton,
+.gal-right-top,
+.gal-right-button {
+height: 267px;
+}
+
 .gal-center {
 display: flex;
+height: 534px;
+}
+
+.gal-center img {
+height: 100%;
+width: auto;
 }
 
 .gal-right {
 display: flex;
 flex-wrap: wrap;
+height: 534px;
 }
 
 
@@ -223,6 +287,7 @@ font-size: 14px;
 letter-spacing: 2px;
 color: #fff;
 text-transform: uppercase;
+cursor:pointer;
 }
 
 .btn {
@@ -245,7 +310,7 @@ text-transform: none;
 color: #848789;
 }
 
-.btn-offer {
+.form-offer {
 display: flex;
 padding-top: 34px;
 padding-bottom: 111px;
@@ -289,6 +354,7 @@ display: flex;
 width: 1600px;
 background-color: #f7f7f7;
 margin: 0 auto;
+justify-content: center;
 }
 
 .footer-info {

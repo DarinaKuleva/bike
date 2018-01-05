@@ -11,23 +11,23 @@
         <header class="page-header">
           <nav class="main-nav">
             <ul class="main-nav-list">
-              <li class="nav nav-one"><a href="#">about us</a></li>
+              <li class="nav"><a href="#">about us</a></li>
               <li class="nav"><a href="#">work</a></li>
               <a class="logo" href="./">
               <img src="img/logo.png" width="94" height="85" alt="логотип Bicycle">
               </a>
-              <li class="nav nav-two"><a href="#">shop</a></li>
+              <li class="nav"><a href="#">shop</a></li>
               <li class="nav"><a href="#">contact</a></li>
             </ul>
           </nav>
         </header>
     <main>
       <section class="features">
-        <section class="new-generation">
+        <div class="new-generation">
           <img src="img/new-icon.png" width="52" height="43">
           <h3>a new generation of vintage bike</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only<br>five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        </section>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
         <div class="vintage">
           <div class="vin-img">
           <img src="img/vintage-big.jpg" width="100%" height="auto">
@@ -36,8 +36,9 @@
             <img src="img/vintage-icon.png" width="41" height="30">
             <h3>vintage olivia</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
-            <img src="img/menu-line.png">
-            <img src="img/vintage-sm.jpg" width="533" height="200">
+            <div class="feaut-line feaut-line-vin">
+            <img src="img/vintage-sm.jpg">
+            </div>
           </section>
         </div>
         <div class="la-boriosa">
@@ -45,8 +46,9 @@
             <img src="img/vintage-icon.png" width="41" height="30">
             <h3>la boriosa</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
-            <img src="img/menu-line.png">
-            <img src="img/la-bor-sm.jpg" width="534" height="200">
+            <div class="feaut-line feaut-line-la-bor">
+            <img src="img/la-bor-sm.jpg">
+            </div>
           </section>
           <div class="la-bor-img">
           <img src="img/la-bor-big.jpg" width="100%" height="auto">
@@ -60,8 +62,9 @@
             <img src="img/retro-iconpng.png" width="23" height="41">
             <h3>retro bike-m</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
-            <img src="img/menu-line.png">
-            <img src="img/retro-sm.jpg" width="534" height="200">
+            <div class="feaut-line feaut-line-retro">
+            <img src="img/retro-sm.jpg">
+            </div>
           </section>
           <section class="retro-right-img">
             <img src="img/retro-right.jpg" width="534" height="600">
@@ -82,9 +85,11 @@
               <img src="img/gal-left-top-left.jpg">
             </a>
             </div>
+            <div class="gal-left-batton">
             <a href="#">
               <img src="img/gal-left-batt.jpg">
             </a>
+            </div>
           </div>
           <div class="gal-center">
             <a href="#">
@@ -95,9 +100,11 @@
             </a>
           </div>
           <div class="gal-right">
+          <div class="gal-right-top">
               <a href="#">
                 <img src="img/gal-right-top.jpg">
               </a>
+              </div>
               <div class="gal-right-button">
               <a href="#">
                 <img src="img/gal-right-battom-left.jpg">
@@ -111,7 +118,7 @@
       </section>
       <section class="discover">
         <article class="btn">
-          <a class="btn-discover">discover the shop</a>
+          <a href="#" class="btn-discover">discover the shop</a>
         </article>
       </section>
       <section class="offer">
@@ -119,15 +126,16 @@
           <img src="img/logo.png" width="94" height="85" class="offer-img">
         </a>
         <h3 class="offer-title">Stay on the saddle!</h3>
-        <article class="btn-offer">
+        <form class="form-offer">
           <input type="email" class="btn-enter" value="enter your email...">
           <button type="submit" class="btn-go">go</button>
-        </article>
+        </form>
       </section>
     </main>
   </body>
   <footer class="footer-wrapper">
-  <section class="footer-info">
+  <div class="foot">
+  <div id="container" class="footer-info">
     <div class="info">
       <b>AOD New York </b></br>
       <i>2250 Lexington Avenue </br> New York, NY 10035  - info@domain.com</i>
@@ -151,6 +159,7 @@
         </li>
       </ul>
     </div>
-    </section>
+    </div>
+    </div>
   </footer>
 </html>
