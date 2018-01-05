@@ -8,59 +8,55 @@
     <title>Bike</title>
   </head>
   <body>
-    <div class="page-wrapper">
-      <div class="header-img">
         <header class="page-header">
           <nav class="main-nav">
             <ul class="main-nav-list">
-              <li class="nav"><a href="#">about us</a></li>
-              <li class="nav dot-one">.</li>
+              <li class="nav nav-one"><a href="#">about us</a></li>
               <li class="nav"><a href="#">work</a></li>
-              <a class="logo">
+              <a class="logo" href="./">
               <img src="img/logo.png" width="94" height="85" alt="логотип Bicycle">
               </a>
-              <li class="nav"><a href="#">shop</a></li>
-              <li class="nav dot-two">.</li>
+              <li class="nav nav-two"><a href="#">shop</a></li>
               <li class="nav"><a href="#">contact</a></li>
             </ul>
           </nav>
         </header>
-      </div>
-    </div>
     <main>
-      <section class="menu">
+      <section class="features">
         <section class="new-generation">
           <img src="img/new-icon.png" width="52" height="43">
           <h3>a new generation of vintage bike</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only<br>five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </section>
-        <section class="vintage">
-          <section class="vin-img">
-          </section>
-          <section class="menu-text">
+        <div class="vintage">
+          <div class="vin-img">
+          <img src="img/vintage-big.jpg" width="100%" height="auto">
+          </div>
+          <section class="features-text">
             <img src="img/vintage-icon.png" width="41" height="30">
             <h3>vintage olivia</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
             <img src="img/menu-line.png">
             <img src="img/vintage-sm.jpg" width="533" height="200">
           </section>
-        </section>
-        <section class="la-boriosa">
-          <section class="menu-text">
+        </div>
+        <div class="la-boriosa">
+          <section class="features-text">
             <img src="img/vintage-icon.png" width="41" height="30">
             <h3>la boriosa</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
             <img src="img/menu-line.png">
             <img src="img/la-bor-sm.jpg" width="534" height="200">
           </section>
-          <section class="la-bor-img">
-          </section>
-        </section>
-        <section class="retro">
+          <div class="la-bor-img">
+          <img src="img/la-bor-big.jpg" width="100%" height="auto">
+          </div>
+        </div>
+        <div class="retro">
           <section class="retro-left-img">
             <img src="img/retro-big.jpg" width="533" height="600">
           </section>
-          <section class="menu-text">
+          <section class="features-text">
             <img src="img/retro-iconpng.png" width="23" height="41">
             <h3>retro bike-m</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
@@ -70,32 +66,68 @@
           <section class="retro-right-img">
             <img src="img/retro-right.jpg" width="534" height="600">
           </section>
-        </section>
+        </div>
       </section>
       <section class="carousel-item">
         Здесь предположительно должна быть карусель
       </section>
       <section class="galery">
-        <img src="img/galery.jpg" width="1600" height="534">
+        <div class="galery-img">
+          <div class="gal-left">
+          <div class="gal-left-top">
+            <a href="#">
+              <img src="img/gal-left-top-right.jpg">
+            </a>
+            <a href="#">
+              <img src="img/gal-left-top-left.jpg">
+            </a>
+            </div>
+            <a href="#">
+              <img src="img/gal-left-batt.jpg">
+            </a>
+          </div>
+          <div class="gal-center">
+            <a href="#">
+              <img src="img/gal-center-left.jpg">
+            </a>
+            <a href="#">
+              <img src="img/gal-center-right.jpg">
+            </a>
+          </div>
+          <div class="gal-right">
+              <a href="#">
+                <img src="img/gal-right-top.jpg">
+              </a>
+              <div class="gal-right-button">
+              <a href="#">
+                <img src="img/gal-right-battom-left.jpg">
+              </a>
+              <a href="#">
+                <img src="img/gal-right-battom-right.jpg">
+              </a>
+              </div>
+          </div>
+        </div>
       </section>
       <section class="discover">
         <article class="btn">
-          <button type="button" class="btn-discover">discover the shop</button>
+          <a class="btn-discover">discover the shop</a>
         </article>
       </section>
       <section class="offer">
-        <article class="offer-img">
-          <img src="img/logo.png" width="94" height="85">
-        </article>
+        <a>
+          <img src="img/logo.png" width="94" height="85" class="offer-img">
+        </a>
         <h3 class="offer-title">Stay on the saddle!</h3>
         <article class="btn-offer">
-          <button type="button" class="btn-enter">enter your email...</button>
-          <button type="button" class="btn-go">go</button>
+          <input type="email" class="btn-enter" value="enter your email...">
+          <button type="submit" class="btn-go">go</button>
         </article>
       </section>
     </main>
   </body>
   <footer class="footer-wrapper">
+  <section class="footer-info">
     <div class="info">
       <b>AOD New York </b></br>
       <i>2250 Lexington Avenue </br> New York, NY 10035  - info@domain.com</i>
@@ -119,5 +151,6 @@
         </li>
       </ul>
     </div>
+    </section>
   </footer>
 </html>
