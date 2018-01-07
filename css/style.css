@@ -34,9 +34,10 @@ justify-content: center;
 }
 
 .main-nav {
-width: 625px;
+max-width: 1000px;
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
 }
 
 .main-nav-list {
@@ -53,18 +54,26 @@ justify-content: center;
 .logo {
 margin-top: 35px;
 left: 50%;
-margin-left: 75px;
-margin-right: 64px;
+margin-left: 42px;
+margin-right: 31px;
 }
 
 .nav {
 margin-top: 66px;
 position: relative;
+padding-top: 0;
+padding-bottom: 0;
+padding-right: 0;
+padding-left: 33px;
 }
 
 .nav:nth-of-type(2n+1):after {
 content: ".";
 position: absolute;
+}
+
+.nav a:nth-child(2n+1) {
+  padding-right: 33px;
 }
 
 .main-nav-list a {
@@ -119,13 +128,15 @@ margin-top: 0;
 margin-bottom: 13px;
 }
 
-.feaut-line::before {
+.features-text p::after {
 width: 50px;
 content: '';
 position: absolute;
-border-bottom: 2px solid #d7d7d7;
-right: 240px;
-top: 20px;
+border-bottom: 1px solid #d7d7d7;
+right: 0;
+left: 0;
+margin: auto;
+padding-top: 63px;
 }
 
 .new-generation p {
@@ -161,6 +172,7 @@ padding-right: 60px;
 padding-left: 60px;
 text-align: justify;
 margin-top: 0px;
+position: relative;
 }
 
 .vintage {
@@ -211,6 +223,7 @@ background-color: #fff;
 .galery {
 background-color: #282f35;
 width: 100%;
+overflow: hidden;
 }
 
 .gal-left {
@@ -255,7 +268,6 @@ display: flex;
 flex-wrap: wrap;
 height: 534px;
 }
-
 
 .gal-right-button {
 display: flex;
@@ -359,7 +371,8 @@ justify-content: center;
 width: 1100px;
 margin: 0 auto;
 display: flex;
-
+position: relative;
+justify-content: center;
 }
 
 .social  {
@@ -383,11 +396,48 @@ margin-right: 15px;
 color: #4d4959;
 margin-top: 96px;
 margin-bottom: 100px;
-font-size: 13,9px;
+font-size: 13.9px;
 text-transform: none;
+position: absolute;
+left: 0;
 
 }
 
 .info b {
 font-size: 16px;
+}
+
+.carousel-item {
+width: 100%;
+height: 469px;
+background-color: #f7f7f7;
+text-align: center;
+}
+
+.carousel-item img{
+margin: 0 auto;
+padding-top: 124px;
+padding-bottom: 10px;
+}
+
+.cl-head {
+display: flex;
+justify-content: center;
+text-transform: none;
+letter-spacing: 2px;
+}
+
+.cl-head p {
+padding-left: 5px;
+color: #9b9d9f;
+}
+
+.cl-text p {
+max-width: 1200px;
+margin: 0 auto;
+text-transform: none;
+font-size: 24px;
+line-height: 34px;
+color: #9b9d9f;
+padding-bottom: 100px;
 }
