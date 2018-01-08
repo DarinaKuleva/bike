@@ -4,5 +4,5 @@
       dots: true,
       arrows: false,
       draggable: true,
-      autoplay: false,
+      autoplay: true,
       });

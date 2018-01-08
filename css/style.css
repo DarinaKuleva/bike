@@ -90,7 +90,11 @@ line-height: 34px;
 
 .new-generation {
 padding-top: 117px;
-padding-bottom: 140px;
+padding-bottom: 113px;
+}
+
+.new-generation img {
+padding-bottom: 10px;
 }
 
 .features p {
@@ -119,8 +123,8 @@ letter-spacing: 2px;
 }
 
 .feaut-line img {
-  height: 100%;
-  width: auto;
+  /*height: 100%;
+  width: auto;*/
   padding-top: 70px;
 }
 
@@ -147,7 +151,9 @@ padding-right: 240px;
 
 .new-generation h3 {
 padding-left: 275px;
-padding-right: 240px;
+padding-right: 263px;
+margin-top: 5px;
+
 }
 
 main {
@@ -457,5 +463,28 @@ cursor: pointer;
 }
 
 .slick-dots li button:before {
-    color: #a9afb3;
+color: #a9afb3;
+font-size: 10px;
+color: #fff;
 }
+
+.slick-dots li button {
+font-size: 0;
+line-height: 0;
+display: block;
+width: 5px;
+height: 5px;
+padding: 4px;
+cursor: pointer;
+color: transparent;
+border: 1px solid #a9afb3;
+border-radius: 20px 20px;
+margin-top: 4px;
+margin-left: 5.5px;
+}
+
+.slick-dots li.slick-active button:before {
+color: #a9afb3;
+}
+
+
